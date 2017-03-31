@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Polina ANis'kina
+Question 5
+SOEN 287   -->
+<html>
+
+<head>
+    <title> Assignment &num;1&sol;Question 4 </title>
+    <style>
+        body {
+            background-color: mistyrose;
+        }
+
+        legend {
+            color: darkred;
+        }
+
+        fieldset {
+            background-color: lightgray;
+        }
+
+        .renter {
+            background-color: gainsboro;
+        }
+
+        .leg {
+            color: indigo;
+        }
+
+        h1 {
+            padding-top: 14px;
+            padding-left: 160px;
+        }
+
+        li {
+            padding-bottom: 10px;
+        }
+        #suggestions {
+          display: none;
+          background-color: lightgray;
+        }
+        .red {
+          color: darkred;
+        }
+        #id {
+          width: 50px;
+          height: 25px;
+          float: left;
+        }
+
+    </style>
+</head>
+
+<body>
+    <script src="suggestions.js"></script>
+    <div>
+        <a href="http://www.clipartkid.com/similar-galleries-pay-rent-clipart-DSHgDi-clipart/">
+            <img  id = "image" alt="For rent sign" src="rsz_for_rent.jpg"/> </a>
+        <h1> Polina&apos;s Apartment Search Form </h1>
+    </div>
+    <br/><br/><br/>
+    <form>
+        <fieldset class="renter">
+            <legend class="leg"> Renter(s) Information</legend>
+            <label> <strong>How many people will live in the appartment?</strong>
+<select name = "people">
+    <option value = "one"> 1 </option>
+<option value = "two"> 2 </option>
+ <option value = "three"> 3 </option>
+<option value = "four"> 4 </option>
+</select>
+</label>
+            <br/> <br/> <br/>
+            <label> <strong>Smoker?</strong>
+    <input type="radio" name="people" value="Yes" > Yes</label>
+            <label>  <input type="radio" name="people" value="No"> No
+</label>
+            <br/> <br/>
+            <label><strong>Any pets? </strong> <br/>
+    <input type ="checkbox" name="people" value = "Cat"> Cat(s)</label><br/>
+            <label>  <input type ="checkbox" name="people" value = "Dog"> Dog(s)</label><br/>
+            <label><input type ="checkbox" name="people" value = "Other"> Other Specify</label>
+            <label>  <input type ="text" name="people" id="pet"/> <br/></label>
+            <label> <input type ="checkbox" name="people" value = "No"> No pets
+</label>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend> What are you looking for? </legend>
+            <ul>
+                <li> <strong> Size of apartment:</strong><br/>
+                    <label>  <input type ="checkbox" name="people" value = "Studio"> Studio</label>
+                    <label>  <input type ="checkbox" name="people" value = "three_and_half"> 3&frac12;</label>
+                    <label>  <input type ="checkbox" name="people" value = "four_and_falf" id="four"> 4&frac12;</label>
+                    <label>  <input type ="checkbox" name="people" value = "five_and_falf" id="five"> 5&frac12;</label>
+                    <label>  <input type ="checkbox" name="people" value = "more" id = "more"> More than 5&frac12;</label><br/>
+                </li>
+                <li> <strong> Do you have preferred location?</strong> <br/>
+                    <label>  <input type ="checkbox" name="people" value = "WI"> West Island</label>
+                    <label>  <input type ="checkbox" name="people" value = "dt" id = "dt"> Downtown</label>
+                    <label>   <input type ="checkbox" name="people" value = "LW"> Lower Westmount</label>
+                    <label>   <input type ="checkbox" name="people" value = "NDG"> NDG</label>
+                    <label>   <input type ="checkbox" name="people" value = "EI"> East end of Island</label>
+                    <label> <input type ="checkbox" name="people" value = "dc"> Don&apos;t care</label><br/>
+                </li>
+                <li> <strong> Price Range&sol;month:</strong><br/>
+                    <label>
+      <select id="non" name = "people">
+          <option value = "less500" > &lt;500 </option>
+          <option value = "500&minus;1000" > 500&minus;1000 </option>
+          <option value = "1000&minus;2000">1000&minus;2000 </option>
+          <option value = "dc"> Don&apos;t care</option>
+      </select>
+      </label><br/>
+                </li>
+                <li> <strong>Would be nice to have</strong><br/>
+                    <label> <input type ="checkbox" name="people" value = "fire"> Fire place</label>
+                    <label> <input type ="checkbox" name="people" value = "Laundromat"> Laundromat in building</label>
+                    <label>   <input type ="checkbox" name="people" value = "inparking"> Indoor parking</label>
+                    <label>   <input type ="checkbox" name="people" value = "outparking"> Output parking</label>
+                    <label>   <input type ="checkbox" name="people" value = "balcony"> Balcony</label>
+                </li>
+            </ul>
+        </fieldset>
+        <p>
+            Let&apos;s see what we can find...<br/><br/>
+            <label> <input type = "submit" value = "Search" id = "search"/></label>
+            <label> <input type = "reset" value = "Start over" /></label>
+        </p>
+<fieldset id = "suggestions">
+    <legend class = "red"> Expert Suggestions </legend>
+    <p id = "output"> </p>
+</fieldset>
+
+    </form>
+</body>
+
+</html>
